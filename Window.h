@@ -15,12 +15,10 @@ public:
 	RECT getClientWindowRect();
 	void setHWND(HWND hwnd);
 
-
 	//EVENTS
 	virtual void onCreate();
 	virtual void onUpdate();
 	virtual void onDestroy();
-
 
 	~Window();
 protected:

@@ -46,7 +46,6 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam)
 bool Window::init()
 {
 
-
 	//Setting up WNDCLASSEX object
 	WNDCLASSEX wc;
 	wc.cbClsExtra = NULL;
@@ -81,13 +80,8 @@ bool Window::init()
 	::ShowWindow(m_hwnd, SW_SHOW);
 	::UpdateWindow(m_hwnd);
 
-
-
-
 	//set this flag to true to indicate that the window is initialized and running
 	m_is_run = true;
-
-
 
 	return true;
 }
